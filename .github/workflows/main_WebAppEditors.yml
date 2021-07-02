@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '3.1.301'
         include-prerelease: true
 
     - name: Build with dotnet
@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'WebAppEditors'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_de4ada5b036a40d2a302698404573b7c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_15fe924ae47e430d952cbd809fda13de }}
         package: .
